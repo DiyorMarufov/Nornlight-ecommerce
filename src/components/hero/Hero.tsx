@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Hero: React.FC = () => {
-  const heroImages = [hero_image, hero_image, hero_image]; 
+  const heroImages = [hero_image, hero_image, hero_image];
 
   return (
     <div className="container-hero mt-[30px]">
