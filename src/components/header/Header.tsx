@@ -11,7 +11,7 @@ const Header = () => {
     <header className="container mx-auto">
       <nav className="flex justify-between mt-[12px]">
         <div>
-          <ul className="flex gap-[27px] opacity-50">
+          <ul className="flex gap-[27px] opacity-50 max-md:hidden">
             <li>О компании</li>
             <li>Доставка и оплата</li>
             <li>Возврат</li>
@@ -21,7 +21,7 @@ const Header = () => {
           </ul>
         </div>
         <div>
-          <ul className="flex gap-[24px]">
+          <ul className="flex gap-[24px] max-md:hidden">
             <li className="text-black">8 (800) 890-46-56</li>
             <li className="opacity-50">Заказать звонок</li>
           </ul>
@@ -29,9 +29,9 @@ const Header = () => {
       </nav>
       <div className="flex gap-[29px] mt-5">
         <div>
-          <img src={logo} alt="" />
+          <img src={logo} alt="" className="max-w-[207px] max-md:[150px]" />
         </div>
-        <div className="w-[153px] h-[50px] bg-[#454545] rounded-[100px] flex justify-center items-center gap-1 text-[16px] text-white">
+        <div className="w-[153px] h-[50px] bg-[#454545] rounded-[100px] flex justify-center items-center gap-1 text-[16px] text-white max-md:hidden">
           <div>
             <img src={hamburger} alt="" />
           </div>
@@ -47,16 +47,26 @@ const Header = () => {
         </div>
         <div className="flex gap-8">
           <div>
-            <img width={20} src={like} alt="" className="mx-auto" />
-            <p>Избранное</p>
+            <img
+              width={20}
+              src={like}
+              alt=""
+              className="mx-auto max-md:max-w-5"
+            />
+            <p className="max-md:hidden">Избранное</p>
           </div>
-          <div>
+          <div className="max-md:hidden">
             <img width={20} src={set} alt="" className="mx-auto" />
             <p>Сравнение</p>
           </div>
           <div>
-            <img width={20} src={korzinka} alt="" className="mx-auto" />
-            <p>Корзина</p>
+            <img
+              width={20}
+              src={korzinka}
+              alt=""
+              className="mx-auto max-md:max-w-5"
+            />
+            <p className="max-md:hidden">Корзина</p>
           </div>
         </div>
       </div>
