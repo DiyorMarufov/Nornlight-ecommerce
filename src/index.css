@@ -1,1 +1,43 @@
 @import "tailwindcss";
+
+.container {
+    max-width: 1714px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.swiper-pagination-bullet {
+  background: #888;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+  opacity: 1;
+}
+
+.custom-swiper .swiper-pagination {
+  text-align: right;
+  padding-right: 1rem;
+  bottom: 10px !important;
+  left: auto !important;
+  right: 0 !important;
+  width: auto !important;
+}
+
+
+.custom-swiper .swiper-pagination-bullet {
+  background: #000;
+  opacity: 0.5;
+  margin: 0 4px;
+  transition: opacity 0.3s;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  background: #000;
+  opacity: 1;
+}
