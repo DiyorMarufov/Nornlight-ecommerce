@@ -16,7 +16,7 @@ const MainRouters = () => {
             { index: true, element: <Home /> },
             { path: "product/:id", element: <ProductDetail /> },
           ],
-        }
+        },
       ])}
     </Suspense>
   );
