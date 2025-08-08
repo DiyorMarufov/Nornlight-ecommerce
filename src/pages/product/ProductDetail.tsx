@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 
 const ProductDetail = () => {
   return (
-    <section className="mt-[102px]">
+    <section className="mt-[102px] pb-[127px]">
       <div className="container">
         <div className="flex max-xl:flex-col gap-[30px]">
           <div
