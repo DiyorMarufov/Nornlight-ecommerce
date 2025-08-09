@@ -15,7 +15,7 @@ const Header = () => {
         <div>
           <ul className="flex gap-[27px] opacity-50 max-[805px]:hidden max-[920px]:text-[15px] max-[881px]:text-[13px]">
             <li>
-              <NavLink to={"/company"}>О компании</NavLink>
+              <NavLink to={"company"}>О компании</NavLink>
             </li>
             <li>
               <NavLink to={"#"}>Доставка и опла</NavLink>та
@@ -106,30 +106,14 @@ const Header = () => {
 
       <div className="w-full h-[44px] bg-[#F2F2F2] rounded-[100px] mt-[24px] flex items-center max-md:hidden max-[1240px]:text-[14px]  max-[1138px]:text-[12px] max-[927px]:text-[11px] max-[875px]:text-[10px] max-[775px]:text-[9px]">
         <ul className="flex gap-[52px] mx-auto max-[1240px]:gap-[45px] max-[990px]:gap-[30px]">
-          <li className="active:opacity-50">
-            <NavLink to={"#"}>Светильники</NavLink>
-          </li>
-          <li className="active:opacity-50">
-            <NavLink to={"#"}>Люстры</NavLink>
-          </li>
-          <li className="active:opacity-50">
-            <NavLink to={"#"}>Лампы</NavLink>
-          </li>
-          <li className="active:opacity-50">
-            <NavLink to={"#"}>Настольные лампы</NavLink>
-          </li>
-          <li className="active:opacity-50">
-            <NavLink to={"#"}>Ночники</NavLink>
-          </li>
-          <li className="active:opacity-50">
-            <NavLink to={"#"}>Подстветка</NavLink>
-          </li>
-          <li className="active:opacity-50">
-            <NavLink to={"#"}>Уличное освещение</NavLink>
-          </li>
-          <li className="active:opacity-50">
-            <NavLink to={"#"}>Мебельные установки</NavLink>
-          </li>
+          <li>Светильники</li>
+          <li>Люстры</li>
+          <li>Лампы</li>
+          <li>Настольные лампы</li>
+          <li>Ночники</li>
+          <li>Подстветка</li>
+          <li>Уличное освещение</li>
+          <li>Мебельные установки</li>
         </ul>
       </div>
     </header>

@@ -16,11 +16,8 @@ const MainRouters = () => {
           children: [
             { index: true, element: <Home /> },
             { path: "product/:id", element: <ProductDetail /> },
+            { path: "company", element: <Company /> },
           ],
-        },
-        {
-          path: "company",
-          element: <Company />,
         },
       ])}
     </Suspense>
