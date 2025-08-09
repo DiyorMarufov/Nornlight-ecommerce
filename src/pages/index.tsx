@@ -24,4 +24,4 @@ const MainRouters = () => {
   );
 };
 
-export default React.memo(MainRouters);
+export default React.memo(MainRouters)

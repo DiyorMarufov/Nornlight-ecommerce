@@ -137,4 +137,4 @@ const ProductDetail = () => {
 };
 
 export default React.memo(ProductDetail);
-<div className="w-full"></div>;
+
