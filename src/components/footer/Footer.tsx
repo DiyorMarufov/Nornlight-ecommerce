@@ -5,8 +5,8 @@ import vk from "../../assets/Group 59.svg";
 
 const Footer = () => {
   return (
-    <footer className=" bg-[#F2F2F2]">
-      <div className="container mx-auto flex py-[79px]">
+    <footer className="bg-[#F2F2F2]">
+      <div className="container mx-auto flex py-[79px] max-md:flex max-md:flex-col">
         <div className="flex flex-col gap-9 justify-center">
           <div className="ml-2">
             <img src={norn} alt="" />
@@ -23,7 +23,7 @@ const Footer = () => {
             <img src={vk} alt="" />
           </div>
         </div>
-        <div className="flex flex-col gap-[32px] ml-[146px]">
+        <div className="flex flex-col gap-[32px] ml-[146px] max-md:ml-0 max-md:mt-[32px]">
           <h1 className="text-2xl">Покупателям</h1>
           <div className="flex flex-col gap-[27px]">
             <p className="opacity-50">О компании</p>
@@ -34,7 +34,7 @@ const Footer = () => {
             <p className="opacity-50">Блог</p>
           </div>
         </div>
-        <div className="flex flex-col gap-[32px] ml-[153px]">
+        <div className="flex flex-col gap-[32px] ml-[153px] max-md:ml-0 max-md:mt-[36px]">
           <h1 className="text-2xl">Товары</h1>
           <div className="flex flex-col gap-[27px]">
             <p className="opacity-50">Люстры</p>
@@ -45,7 +45,7 @@ const Footer = () => {
             <p className="opacity-50">Настольные лампы</p>
           </div>
         </div>
-        <div className="flex flex-col gap-[32px] ml-[71px] justify-center">
+        <div className="flex flex-col gap-[32px] ml-[71px] justify-center max-md:ml-0 max-md:mt-[27px]">
           <p className="opacity-50">Споты</p>
           <p className="opacity-50">Трековые светильники</p>
           <p className="opacity-50">Уличные светильники</p>
