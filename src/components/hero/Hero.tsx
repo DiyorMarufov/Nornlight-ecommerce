@@ -37,3 +37,4 @@ const Hero: React.FC = () => {
 };
 
 export default React.memo(Hero);
+
