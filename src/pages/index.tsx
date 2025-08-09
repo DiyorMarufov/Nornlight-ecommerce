@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { useRoutes } from "react-router-dom";
+import Company from "./company";
 
 const Home = lazy(() => import("./home/Home"));
 const Layout = lazy(() => import("./layout/Layout"));
@@ -15,6 +16,7 @@ const MainRouters = () => {
           children: [
             { index: true, element: <Home /> },
             { path: "product/:id", element: <ProductDetail /> },
+            { path: "company", element: <Company /> },
           ],
         },
       ])}
