@@ -1,9 +1,19 @@
 import { memo } from "react";
+import { AboutProduct } from "../../../static";
 
 const ProductCharacteristics = () => {
   return (
-    <div className="ProductCharacteristics">
-      <h2>ProductCharacteristics</h2>
+    <div className="w-[355px] flex flex-col gap-[60px] mt-[60px] max-sm:w-full">
+      {AboutProduct?.map((product) => (
+        <div key={product.id} className="flex justify-between">
+          <span className="font-medium text-[16px] text-[#BEBEBE]">
+            {product.title}
+          </span>
+          <span className="font-medium text-[16px] text-[#454545]">
+            {product.desc}
+          </span>
+        </div>
+      ))}
     </div>
   );
 };
