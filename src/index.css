@@ -58,3 +58,10 @@
   opacity: 1;
 }
 
+.detail::-webkit-scrollbar{
+  display: none;
+}
+
+.detail-ul::-webkit-scrollbar{
+  display: none;
+}

@@ -46,3 +46,11 @@ export const ProductContent: Product[] = [
     desc: "220",
   },
 ];
+
+export const AboutProduct: Product[] = [
+  { id: 1, title: "Вариант установки", desc: "Накладной" },
+  { id: 2, title: "Напряжение питания", desc: "230В AC (50 Гц)" },
+  { id: 3, title: "Масса, кг", desc: "0,38 кг" },
+  { id: 4, title: "Степень защиты", desc: "Накладной" },
+  { id: 5, title: "Габариты, мм", desc: "105×81×57,3" },
+];
