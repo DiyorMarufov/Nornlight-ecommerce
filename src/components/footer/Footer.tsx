@@ -2,6 +2,7 @@ import React from "react";
 import norn from "../../assets/Group 64.svg";
 import cards from "../../assets/image 1.svg";
 import vk from "../../assets/Group 59.svg";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -25,33 +26,67 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-[32px] ml-[146px] max-[1100px]:ml-[120px] max-[850px]:ml-[100px] max-md:ml-0 max-md:mt-[32px]">
           <h1 className="text-2xl">Покупателям</h1>
-          <div className="flex flex-col gap-[27px]">
-            <p className="opacity-50">О компании</p>
-            <p className="opacity-50">Доставка и оплата</p>
-            <p className="opacity-50">Возврат</p>
-            <p className="opacity-50">Гарантии</p>
-            <p className="opacity-50">Контакты</p>
-            <p className="opacity-50">Блог</p>
-          </div>
+          <ul className="flex flex-col gap-[27px]">
+            <li className="opacity-50">
+              <NavLink to={"#"}>О компании</NavLink>
+            </li>
+            <li className="opacity-50">
+              <NavLink to={"#"}>Доставка и оплата</NavLink>
+            </li>
+            <li className="opacity-50">
+              <NavLink to={"#"}>Возврат</NavLink>
+            </li>
+            <li className="opacity-50">
+              <NavLink to={"#"}>Гарантии</NavLink>
+            </li>
+            <li className="opacity-50">
+              <NavLink to={"#"}>Контакты</NavLink>
+            </li>
+            <li className="opacity-50">
+              <NavLink to={"#"}>Блог</NavLink>
+            </li>
+          </ul>
         </div>
         <div className="flex flex-col gap-[32px] ml-[153px] max-[1100px]:ml-[120px] max-[850px]:ml-[100px] max-md:ml-0 max-md:mt-[36px]">
           <h1 className="text-2xl">Товары</h1>
-          <div className="flex flex-col gap-[27px]">
-            <p className="opacity-50">Люстры</p>
-            <p className="opacity-50">Светильники</p>
-            <p className="opacity-50">Бра</p>
-            <p className="opacity-50">Торшеры</p>
-            <p className="opacity-50">Комплектуюшие</p>
-            <p className="opacity-50">Настольные лампы</p>
-          </div>
+          <ul className="flex flex-col gap-[27px]">
+            <li className="opacity-50">
+              <NavLink to={"#"}>Люстры</NavLink>
+            </li>
+            <li className="opacity-50">
+              <NavLink to={"#"}>Светильники</NavLink>
+            </li>
+            <li className="opacity-50">
+              <NavLink to={"#"}>Бра</NavLink>
+            </li>
+            <li className="opacity-50">
+              <NavLink to={"#"}>Торшеры</NavLink>
+            </li>
+            <li className="opacity-50">
+              <NavLink to={"#"}>Комплектуюшие</NavLink>
+            </li>
+            <li className="opacity-50">
+              <NavLink to={"#"}>Настольные лампы</NavLink>
+            </li>
+          </ul>
         </div>
-        <div className="flex flex-col gap-[32px] ml-[71px] max-[1100px]:ml-[50px] max-[850px]:ml-[30px] justify-center max-md:ml-0 max-md:mt-[27px]">
-          <p className="opacity-50">Споты</p>
-          <p className="opacity-50">Трековые светильники</p>
-          <p className="opacity-50">Уличные светильники</p>
-          <p className="opacity-50">Технические светильники</p>
-          <p className="opacity-50">Светодиодные ленты</p>
-        </div>
+        <ul className="flex flex-col gap-[32px] ml-[71px] max-[1100px]:ml-[50px] max-[850px]:ml-[30px] justify-center max-md:ml-0 max-md:mt-[27px]">
+          <li className="opacity-50">
+            <NavLink to={"#"}>Споты</NavLink>
+          </li>
+          <li className="opacity-50">
+            <NavLink to={"#"}>Трековые светильники</NavLink>
+          </li>
+          <li className="opacity-50">
+            <NavLink to={"#"}>Уличные светильники</NavLink>
+          </li>
+          <li className="opacity-50">
+            <NavLink to={"#"}>Технические светильники</NavLink>
+          </li>
+          <li className="opacity-50">
+            <NavLink to={"#"}>Светодиодные ленты</NavLink>
+          </li>
+        </ul>
       </div>
     </footer>
   );
