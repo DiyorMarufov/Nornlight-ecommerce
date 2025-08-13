@@ -12,10 +12,10 @@ const Features = () => {
             Почему NORNLIGHT?
           </h1>
           <Link to={"company"}>
-          <button className="flex items-center gap-5 px-[48px] py-[14px] rounded-[100px] border border-[#454545] text-[#454545] cursor-pointer hover:bg-[black] hover:text-[white] transition-all">
-            <span>О компании</span>
-            <FaArrowRight />
-          </button>
+            <button className="flex items-center gap-5 px-[48px] py-[14px] rounded-[100px] border border-[#454545] text-[#454545] cursor-pointer hover:bg-[black] hover:text-[white] transition-all">
+              <span>О компании</span>
+              <FaArrowRight />
+            </button>
           </Link>
         </div>
 
