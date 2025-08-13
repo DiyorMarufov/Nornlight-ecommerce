@@ -1,21 +1,17 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
 import feature from "../../assets/features/feature.svg";
 import { Link } from "react-router-dom";
+import Button from "../ui/button";
+import Title from "../ui/title";
 
 const Features = () => {
   return (
     <section className="mt-[80px] mb-[100px]">
       <div className="container">
         <div className="flex justify-between">
-          <h1 className="font-extrabold text-[40px] text-[#454545]">
-            Почему NORNLIGHT?
-          </h1>
+          <Title text="Почему NORNLIGHT?" />
           <Link to={"company"}>
-            <button className="flex items-center gap-5 px-[48px] py-[14px] rounded-[100px] border border-[#454545] text-[#454545] cursor-pointer hover:bg-[black] hover:text-[white] transition-all">
-              <span>О компании</span>
-              <FaArrowRight />
-            </button>
+            <Button text="О компании" />
           </Link>
         </div>
 

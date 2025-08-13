@@ -4,12 +4,21 @@ import CardData from "../../data/cardData";
 import image_10 from "../../assets/category/image_10.png";
 import image_11 from "../../assets/category/image_11.png";
 import arrow from "../../assets/arrow.png";
+import Title from "../ui/title";
+import Button from "../ui/button";
+import { Link } from "react-router-dom";
 
 const Category = () => {
   return (
-    <div>
+    <div className="mt-[80px]">
       <div className="container">
-        <div className="mt-[20px] flex items-center justify-center">
+        <div className="flex justify-between">
+          <Title text="Каталог" />
+          <Link to={""}>
+            <Button text="Весь каталог" />
+          </Link>
+        </div>
+        <div className="mt-[40px] flex items-center justify-center]">
           <div className="grid grid-cols-3 gap-[20px]">
             {CardData.map((item) => (
               <CategoryCard
