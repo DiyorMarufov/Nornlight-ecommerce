@@ -58,10 +58,31 @@
   opacity: 1;
 }
 
-.detail::-webkit-scrollbar{
+.detail::-webkit-scrollbar {
   display: none;
 }
 
-.detail-ul::-webkit-scrollbar{
+.detail-ul::-webkit-scrollbar {
   display: none;
+}
+
+.loader__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loader {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #000 #0000;
+  animation: l1 1s infinite;
+}
+@keyframes l1 {
+  to {
+    transform: rotate(0.5turn);
+  }
 }

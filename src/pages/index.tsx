@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { useRoutes } from "react-router-dom";
+import Loader from "../components/ui/Loader";
 
 const Home = lazy(() => import("./home/Home"));
 const Layout = lazy(() => import("./layout/Layout"));
@@ -16,7 +17,7 @@ const ProductImage = lazy(() => import("./product/product-image"));
 
 const MainRouters = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loader />}>
       {useRoutes([
         {
           path: "/",
