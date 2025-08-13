@@ -6,7 +6,7 @@ import Title from "../ui/title";
 
 const Features = () => {
   return (
-    <section className="mt-[80px] mb-[100px]">
+    <section className="mt-[120px] mb-[90px]">
       <div className="container">
         <div className="flex justify-between">
           <Title text="Почему NORNLIGHT?" />
