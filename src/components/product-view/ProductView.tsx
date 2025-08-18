@@ -10,12 +10,12 @@ const ProductView = () => {
   const { data } = useFetch<{ products: IProduct[] }>("products");
   const products = data?.products ?? [];
   return (
-    <section className="py-10">
+    <section>
       <div className="container px-4">
         <div className="flex justify-between items-center mb-6">
-          <Title text="Популярные товары" />
+          <Title text="Популярные товары" className="max-md:text-[28px]" />
           <Link to={""}>
-            <Button text="Все товары" />
+            <Button text="Все товары" className="max-sm:hidden" />
           </Link>
         </div>
 
@@ -53,6 +53,10 @@ const ProductView = () => {
             </div>
           ))}
         </div>
+
+        <Link to={""}>
+          <Button text="Все товары" className="sm:hidden max-sm:w-full mt-8" />
+        </Link>
       </div>
     </section>
   );

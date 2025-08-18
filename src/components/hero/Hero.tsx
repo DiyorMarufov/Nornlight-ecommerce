@@ -1,6 +1,5 @@
 import React from "react";
 import hero_image from "../../assets/hero_image.png";
-// import hero_md from "../../assets/hero_image_md-phone.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -37,4 +36,3 @@ const Hero: React.FC = () => {
 };
 
 export default React.memo(Hero);
-
